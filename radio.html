@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .radio-group {
+          display: flex;
+          align-items: center;
+        }
+  
+        label {
+          margin-right: 16px;
+        }
+  
+        input[type="radio"] {
+          display: none;
+        }
+  
+        .radio-button {
+          display: inline-block;
+          padding: 8px 16px;
+          border: 2px solid black;
+          font-weight: bold;
+          cursor: pointer;
+          font-size: 12px;
+          border-radius: 8px;
+          background-color: black;
+          color:white;
+        }
+  
+  
+        input[type="radio"]:checked + .radio-button {
+          border-color: white;
+          background-color:white;
+          color: black;
+        }
+      </style>
+  
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="size" value="sm">
+          <span class="radio-button sm">SM</span>
+        </label>
+        <label>
+          <input type="radio" name="size" value="md">
+          <span class="radio-button md">MD</span>
+        </label>
+        <label>
+          <input type="radio" name="size" value="lg">
+          <span class="radio-button lg">LG</span>
+        </label>
+        <label>
+          <input type="radio" name="size" value="xl">
+          <span class="radio-button xl">XL</span>
+        </label>
+      </div>
+</body>
+</html>

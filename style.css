@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Delicious Handrawn', cursive; */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+body {
+    background-color: #f1f1f1;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+}
+
+.nav-area {
+    padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.navbar-brand:hover{
+    color: grey;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+
+    color: white;
+}
+.nav-link:hover{
+    color: grey;
+}
+
+.main-text {
+    font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    font-size: 3rem;
+}
+
+.form-center {
+    font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    font-size: 1.50rem;
+    width: 100%;
+}
+
+input {
+    padding-left: 1rem;
+    width: 250px;
+    height: 40px;
+    border-radius: 70px;
+}
+
+.label-area {
+    margin-bottom: 2rem;
+
+    padding-right: 1rem;
+}
+
+.not-register {
+    color: white;
+    text-decoration: none;
+}
+
+.not-register:hover {
+    color: grey;
+}
+
+.nav-brand {
+    font-family: 'Chewy', cursive !important;
+    font-size: 3rem;
+
+}
+
+.nav-brand a {
+    font-family: 'Chewy', cursive !important;
+
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+
+}
+
+.btn-cat {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-cat:hover {
+    color: grey;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}
+
+.dropdown-item:active {
+    background-color: grey;
+}
+
+.login-btn a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+
+.login-btn a:hover {
+    color: grey;
+}
+
+.main-img {
+    top: 0;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 93vh;
+}
+.piece{
+    top: 22px;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.9rem;
+    left: 29px;
+
+}
+.slide-down {
+    justify-content: center;
+    display: flex;
+}
+
+.slide-down-img {
+    bottom: 100px;
+    z-index: 3;
+    position: absolute;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease 0s;
+    animation: down 1s infinite;
+}
+
+.swiper-pagination {
+
+    text-align: right !important;
+}
+
+.swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+
+@keyframes down {
+    0% {
+        bottom: 90px;
+    }
+
+    50% {
+        bottom: 80px;
+    }
+
+    100% {
+        bottom: 100px;
+
+    }
+}
+
+.clothes-box {
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    transition: all 0.3s ease 0s;
+    border: 2px solid rgb(226, 226, 226);
+
+}
+
+
+
+
+.clothes-box:hover .product-name {
+    opacity: 1;
+
+}
+
+.clothes-box:hover {
+    box-shadow: 0px 0px 20px 2px #5a5a5a8a;
+
+}
+
+.product-title {
+    font-family: 'Chewy', cursive;
+    font-weight: 600;
+    color: white;
+    opacity: 1;
+    padding: 300px 0px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+.product-name {
+    opacity: 0;
+    justify-content: center;
+    display: flex;
+}
+
+
+.clothes-img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    max-height: 600px;
+}
+
+.sdark {
+    position: relative;
+    background-color: #121212;
+}
+
+.best-seller {
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 800;
+    color: white;
+}
+
+.clothes-box-best {
+    z-index: 2;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    transition: all 0.2s ease 0s;
+    border: 2px solid rgb(226, 226, 226);
+}
+
+.clothes-best-img {
+    z-index: 2;
+    transition: all 0.3s ease 0s;
+    object-fit: cover;
+    width: 100%;
+    height: 295px;
+
+    max-height: 300px;
+}
+
+.clothes-best-box:hover {
+    box-shadow: 0px 0px 20px 2px #5a5a5a;
+
+}
+
+.best-product-title {
+    z-index: 2;
+
+    font-family: 'Chewy', cursive;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    padding: 135px 0px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+.best-product-name {
+    z-index: 2;
+
+    opacity: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.clothes-box-best:hover .best-product-name {
+    opacity: 1;
+
+}
+
+.clothes-box-best:hover {
+    box-shadow: 0px 0px 20px 2px #bdbdbd8a;
+
+}
+
+.inspect-clothes-area {
+    border: 1px solid black;
+    object-fit: cover;
+    width: 453px;
+    height: 453px;
+}
+
+.inspect-clothes-little-area {
+    border-top: none;
+    border: 1px solid black;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.inspect-clothes {
+    object-fit: cover;
+    width: 450px;
+    height: 450px;
+}
+
+#zoomC {
+    background-image: url(img/black.webp);
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+}
+
+.inspect-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inspect-little-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.inspect-tags {
+    background-color: black;
+    color: white;
+    width: 75px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+}
+
+.inspect-tags:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.inspect-size {
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.inspect-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.inspect-buy {
+    margin-bottom: 1rem;
+    background-color: black;
+    color: white;
+    width: 250px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    height: 50px;
+}
+
+.ins-area {
+    width: 450px;
+}
+
+.swal2-popup {
+    font-size: 1.1rem !important;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 6.25em;
+    background: initial;
+    background-color: #7066e0;
+    color: #fff;
+    width: 90px;
+
+    font-size: 1em;
+}
+
+.swal2-styled.swal2-deny {
+    border: 0;
+    border-radius: 33.25em;
+    background: initial;
+    background-color: #dc3741;
+    color: #fff;
+    font-size: 1em;
+    width: 90px;
+
+}
+
+input[type="radio"] {
+    background-color: black;
+    color: white;
+    width: 75px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-button {
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease 0s;
+
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+button:focus {
+    background-color: transparent !important;
+}
+
+input[type="radio"]:checked+.radio-button {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+
+.bag-item {
+    font-family: 'Montserrat', sans-serif;
+
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.number-input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1rem;
+    width: 75px;
+    height: 45px;
+    border-radius: 25px;
+}
+
+button:focus {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.content-div {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+
+}
+
+.content-img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+.parallax {
+    background-image: url('img/xxx.jpg');
+    height: 700px;
+    filter: brightness(0.5);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-shoes {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+
+.btn-prev {
+    padding: 1px 50px;
+
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.btn-next {
+    padding: 1px 50px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.btn-numb {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.bag-nav {
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+
+.item-title {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.item-gender {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.item-price {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+}
+
+.next-prev {
+    padding-top: 4rem;
+}
+
+table {
+    font-family: 'Montserrat', sans-serif;
+
+    color: rgb(209, 209, 209);
+}
+
+.bosluk {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #5a5a5a;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+}
+
+td {
+
+    padding-bottom: 1rem;
+}
+
+td a:hover {
+    color: rgb(131, 131, 131);
+    transition: all 0.1s ease 0s;
+
+}
+
+.footer-icon {
+    margin-right: 3rem;
+}
+
+.main-box {
+    padding-bottom: 10rem;
+}
+
+
+.br-l-r {
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.br-img-r {
+    border-top-left-radius: 56px;
+    border-bottom-left-radius: 56px;
+}
+
+.border25px {
+    border-radius: 25px;
+}
+
+.br-img-l {
+    border-top-right-radius: 56px;
+    border-bottom-right-radius: 56px;
+}
+
+.br-r-r {
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+@media (max-width:1024px) {
+    .footer-col {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    tr {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .center-footer {
+        display: flex;
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .btn-next {
+        padding: 1px 20px;
+    }
+
+    .btn-prev {
+        padding: 1px 20px;
+    }
+
+    .little-col {
+        width: 50%;
+    }
+
+    .clothes-best-img {
+        height: 280px;
+    }
+
+    .clothes-box-best {
+        height: 284px;
+    }
+
+    .parallax {
+        height: 400px;
+    }
+
+    .main-box {
+        padding-bottom: 14rem;
+    }
+
+    .clothes-box {
+        margin-bottom: 6rem;
+        position: relative;
+        width: 100%;
+        max-height: 764px;
+        transition: all 0.3s ease 0s;
+        border: 2px solid rgb(226, 226, 226);
+    }
+
+    .clothes-img {
+        object-fit: cover;
+        width: 100%;
+        height: 295px;
+        max-height: 600px;
+    }
+
+    .btn-cat {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:990px) {
+    .radio-button {
+        margin-bottom: 0.5rem;
+    }
+
+    .inspect-col {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ins-area {
+        width: 510px;
+
+        justify-content: center;
+    }
+
+    .inspect-clothes-little-area {
+        border-top: none;
+        border: 1px solid black;
+        object-fit: cover;
+        width: 170px;
+        height: 170px;
+        margin-bottom: 2rem;
+    }
+
+    #zoomC {
+        width: 510px;
+    }
+}
+
+@media (max-width:768px) {
+    .inspect-col {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ins-area {
+        width: 356px;
+
+        justify-content: center;
+    }
+
+    .inspect-clothes-little-area {
+        border-top: none;
+        border: 1px solid black;
+        object-fit: cover;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+    }
+
+    #zoomC {
+        width: 355px;
+    }
+
+    .footer-col {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    tr {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .center-footer {
+        display: flex;
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .btn-next {
+        padding: 1px 20px;
+    }
+
+    .btn-prev {
+        padding: 1px 20px;
+    }
+
+    .little-col {
+        width: 50%;
+    }
+
+    .clothes-best-img {
+        height: 280px;
+    }
+
+    .clothes-box-best {
+        height: 284px;
+    }
+
+    .parallax {
+        height: 410px;
+    }
+
+    .main-box {
+        padding-bottom: 14rem;
+    }
+
+    .clothes-box {
+        margin-bottom: 3rem;
+        position: relative;
+        width: 100%;
+        max-height: 575px;
+        transition: all 0.3s ease 0s;
+        border: 2px solid rgb(226, 226, 226);
+    }
+
+    .clothes-img {
+        object-fit: cover;
+        width: 100%;
+        height: 295px;
+        max-height: 600px;
+    }
+
+    .btn-cat {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:425px) {
+    .footer-col {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .parallax {
+        height: 720px;
+    }
+
+    tr {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .center-footer {
+        display: flex;
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .btn-next {
+        padding: 1px 20px;
+    }
+
+    .btn-prev {
+        padding: 1px 20px;
+    }
+
+    .little-col {
+        width: 50%;
+    }
+
+    .clothes-best-img {
+        height: 220px;
+    }
+
+    .clothes-box-best {
+        height: 223px;
+    }
+
+    .main-box {
+        padding-bottom: 14rem;
+    }
+
+    .clothes-box {
+        margin-bottom: 2rem;
+        position: relative;
+        width: 100%;
+        max-height: 300px;
+        transition: all 0.3s ease 0s;
+        border: 2px solid rgb(226, 226, 226);
+    }
+
+    .clothes-img {
+        object-fit: cover;
+        width: 100%;
+        height: 295px;
+        max-height: 600px;
+    }
+
+    .btn-cat {
+        font-size: 15px;
+    }
+
+}

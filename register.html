@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center main-text mt-5">Register To Jem</h2>
+        </div>
+      </div>
+      <div class="row">
+        <form id="form" class="form-center">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <label class="text-white label-area">Username:</label>
+              <input id="name1" type="text" name="Username" id="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label class="text-white label-area">Password:</label>
+              <input id="password1" type="password" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label class="text-white label-area">@E-Maill:</label>
+              <input id="email" type="email" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <input onclick="Login()" type="button" value="Register" />
+            </div>
+          </div>
+          <a class="not-register" onclick="gotoindex()" href="login.html">Zaten kayıt olmussan bana tıkla</a>
+
+        </form>
+      </div>
+    </div>
+
+    <script>
+
+      function gotoindex() {
+        window.location.href='login.html';
+
+      }
+      function Login() {
+        window.location.href='login.html';
+        const link = document.createElement("a");
+        const content = document.getElementById("name1").value;
+        const content1 = document.getElementById("password1").value;
+        const file = new Blob([content + " " + content1], {
+          type: "text/plain",
+        });
+        link.href = URL.createObjectURL(file);
+        link.download = "user_info.txt";
+        link.click();
+        URL.revokeObjectURL(link.href);
+      }
+    </script>
+  </body>
+</html>

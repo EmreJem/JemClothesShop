@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="sass source/stylesheets/index.scss build/stylesheets/style.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="position-relative" style="height: 256px;">
+        
+      <nav class="navbar sticky-top navbar-expand-lg justify-content-center  d-flex bg-white">
+
+          <div class="container">
+              
+            <a class="navbar-brand" href="index.html">JEM</a>
+           
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">About</a>		
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Services</a>		
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Clients</a>		
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Contact</a>			
+            </div>
+           
+            <span class="d-flex justify-content-end" style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="adet" width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png" alt=""><img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/5087/5087592.png" alt=""><img class="" width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/7131/7131131.png"></span>
+          </div>
+        
+        </nav>
+  </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex justify-content-end">
+                        <img class="bag-item" src="https://pyxis.nymag.com/v1/imgs/a88/914/1abfe54a4c29e33a6a86c7cb386644d71c-7----.2x.rhorizontal.w600.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2 class="inspect-title">Nike Black Athlete T-Shirt</h2>
+                    <h2 class="inspect-little-text">Basic T-Shirt</h2>
+                    <div class="mt-3">
+                        <button class="inspect-tags">#black</button>
+                        <button class="inspect-tags">#t-shirt</button>
+                        <button class="inspect-tags">#nike</button>
+                    </div>
+                      <h2  class="inspect-price mt-3">250.00$</h2>
+                      <div>
+                      <label>
+                        <input disabled type="radio" name="size" value="sm" />
+                        <span class="radio-button sm">SM</span>
+                      </label>
+                      <input style="padding-left: 0rem;" value="1"  class="number-input" type="number" id="adet" name="tentacles"
+                      min="1" max="10">
+                      <button style="width: 150px;" onclick="adethesap()" class="inspect-tags text-center">BUY</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script>
+
+    for (var i=0;i<1;i++){
+        function adethesap(){
+            var x = document.getElementById('adet').value;
+            var y = 250;
+            y = x * 250.00;
+            console.log(y);
+            Swal.fire({
+          title: y+".00$ Ödemeyi Onaylıyor Musunuz?",
+          showDenyButton: true,
+          cancelButtonColor: "#00000",
+          confirmButtonColor: "#00000",
+          confirmButtonText: "Yes",
+          denyButtonText: "No",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire("Ödeme Yerine Yönlendiriliyorsunuz", "", "success");
+          } else if (result.isDenied) {
+            Swal.fire("Oh Okey", "", "info");
+          }
+        });
+      }
+     }
+    </script>
+  </body>
+</html>
