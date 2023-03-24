@@ -49,7 +49,7 @@
                 <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Contact</a>			
               </div>
              
-              <span class="d-flex justify-content-end" style="font-size:30px;cursor:pointer" onclick="openNav()"><h2 class="piece" id="adet"></h2><img  width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png" alt=""><img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/5087/5087592.png" alt=""><img class="" width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/7131/7131131.png"></span>
+              <span class="d-flex justify-content-end" style="font-size:30px;cursor:pointer" onclick="openNav()"><h2 class="piece" id="adet"></h2><a href="bag.html"><img  width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png" alt=""></a><a href="login.html"><img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/5087/5087592.png" alt=""></a><img class="" width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/7131/7131131.png"></span>
             </div>
           
           </nav>
@@ -116,18 +116,18 @@
                     <h2 class="inspect-size">Color's</h2>
                   </div>
                 </div>
-                <div class="radio-group">
+                <div onclick="selcetcolor()" class="radio-group">
                   <label>
                     <input type="radio" name="color"  value="black" />
-                    <span onclick="selcetcolor()" id="black" class="radio-button sm">Black</span>
+                    <span  id="black" class="radio-button sm">Black</span>
                   </label>
                   <label>
                     <input type="radio" name="color" value="orange" />
-                    <span onclick="selcetcolor()" id="orange"  class="radio-button md">Orange</span>
+                    <span  id="orange"  class="radio-button md">Orange</span>
                   </label>
                   <label>
                     <input type="radio" name="color" value="brown" />
-                    <span  onclick="selcetcolor()"  class="radio-button lg">Brown</span>
+                    <span    class="radio-button lg">Brown</span>
                   </label>
 
                       
@@ -171,6 +171,8 @@
           
         }
       }
+
+      
       function buyitem() {
         Swal.fire({
           title: "Do you confirm the purchase",
