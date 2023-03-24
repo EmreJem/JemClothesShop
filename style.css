@@ -113,7 +113,9 @@ input {
     height: 40px;
     border-radius: 70px;
 }
-
+.inspect-area{
+    height: 750px;
+}
 .label-area {
     margin-bottom: 2rem;
 
@@ -405,7 +407,7 @@ input {
 }
 
 .inspect-size {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
@@ -692,6 +694,9 @@ td a:hover {
 }
 
 @media (max-width:1024px) {
+    .inspect-area {
+        height: 1500px!important;
+    }
     .footer-col {
         display: flex;
         justify-content: center;
