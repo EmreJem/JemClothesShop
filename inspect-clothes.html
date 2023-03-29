@@ -28,7 +28,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="position-relative" style="height: 200px">
+    <header class="position-relative" style="padding-bottom: 150px;">
       <nav
         class="navbar sticky-top navbar-expand-lg justify-content-center d-flex bg-white"
       >
@@ -58,13 +58,13 @@
             style="font-size: 30px; cursor: pointer"
             onclick="openNav()"
             ><h2 class="piece" id="adet"></h2>
-            <a href="bag.html"
+            <a style="margin-right: 1rem;" href="bag.html"
               ><img
                 width="50"
                 height="50"
                 src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png"
                 alt="" /></a
-            ><a href="login.html"
+            ><a style="margin-right: 1rem;" href="login.html"
               ><img
                 width="50"
                 height="50"
@@ -125,7 +125,7 @@
                   </label>
                   <label>
                     <input type="radio" name="color" value="brown" />
-                    <span class="radio-button lg">Brown</span>
+                    <span id="brown" class="radio-button lg">Brown</span>
                   </label>
 
                       
@@ -172,7 +172,7 @@
         </div>
       </section>
       <!--  -->
-      <section class="mt-5 mb-5">
+      <section  class="mt-5 mb-5">
         <div class="container mt-5">
           <div id="down" class="row">
             <div class="col-md-3 little-col">
@@ -629,16 +629,18 @@
       <!--  -->
       <section class="mt-5 next-prev">
         <div class="container">
-          <div class="row">
-            <hr />
-            <div class="col-12 d-flex justify-content-center">
-              <button class="btn-prev">Prev</button>
-              <h2 class="btn-numb">1</h2>
-              <button class="btn-next">Next</button>
+            <div class="row">
+                <div class="discount d-flex justify-content-center">
+                   <a href="#"> <img class="img-up" src="https://cdn-user-icons.flaticon.com/82002/82002657/1680096638342.svg?token=exp=1680097524~hmac=4779cd758ea74b09ea3623a6ab657a48" alt=""></a>                   </div>
+              <hr>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn-prev">Prev</button>
+                    <h2 class="btn-numb">1</h2>
+                    <button class="btn-next">Next</button>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
     </main>
     <footer class="bg-black mt-5">
       <div class="container bosluk mt-5">
@@ -763,10 +765,12 @@
       </div>
     </footer>
     <script>
+
       function selcetcolor() {
         let selected = document.querySelector('input[name="color"]:checked');
         if (selected.value == "black") {
           document.getElementById("zoomC").style.backgroundImage =
+
             "url(img/black.webp)";
         }
         if (selected.value == "orange") {
@@ -780,6 +784,18 @@
             "url(img/kahverengi.webp)";
         }
       }
+
+      addbag();
+      function addbag() {
+        if (localStorage.clickcount) {
+         
+          localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("adet").innerHTML = localStorage.clickcount;
+      }
+
 
       function buyitem() {
         Swal.fire({
@@ -798,16 +814,7 @@
         });
       }
 
-      addbag();
-      function addbag() {
-        if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount) + 1;
-        } else {
-          localStorage.clickcount = 1;
-        }
-        document.getElementById("adet").innerHTML = localStorage.clickcount;
-      }
-
+    
       var addZoom = (target) => {
         // (A) GET CONTAINER + IMAGE SOURCE
         let container = document.getElementById(target),
@@ -851,8 +858,8 @@
       window.onload = () => addZoom("zoomC");
 
       function openNav() {
-        document.getElementById("mySidenav").style.width = "50%";
-        document.getElementById("main").style.marginLeft = "50%";
+        document.getElementById("mySidenav").style.width = "20%";
+        document.getElementById("main").style.marginLeft = "20%";
       }
 
       function closeNav() {

@@ -19,28 +19,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="position-relative" >
-        
-        <nav class="navbar sticky-top navbar-expand-lg justify-content-center  d-flex bg-white">
-
-            <div class="container">
-                
-              <a class="navbar-brand" href="index.html">JEM</a>
-             
-              <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">T-Shirt</a>		
-                <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Pants</a>		
-                <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Cargopants</a>		
-                <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#">Shorts</a>			
-              </div>
-             
-              <span class="d-flex justify-content-end" style="font-size:30px;cursor:pointer" onclick="openNav()"><h2 class="piece" id="adet"></h2><a href="bag.html"><img  width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png" alt=""></a><a href="login.html"><img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/5087/5087592.png" alt=""></a><img class="" width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/7131/7131131.png"></span>
+    <header class="position-relative">
+        <nav
+          class="navbar sticky-top navbar-expand-lg justify-content-center d-flex bg-white"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="index.html">JEM</a>
+  
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >×</a
+              >
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+                >T-Shirt</a
+              >
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+                >Pants</a
+              >
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+                >Cargopants</a
+              >
+              <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+                >Shorts</a
+              >
             </div>
-          
-          </nav>
-    </header>
-
+  
+            <span
+              class="d-flex justify-content-end"
+              style="font-size: 30px; cursor: pointer"
+              onclick="openNav()"
+              ><h2 class="piece" id="adet"></h2>
+              <a style="margin-right: 1rem;" href="bag.html"
+                ><img
+                  width="50"
+                  height="50"
+                  src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png"
+                  alt="" /></a
+              ><a style="margin-right: 1rem;" href="login.html"
+                ><img
+                  width="50"
+                  height="50"
+                  src="https://cdn-icons-png.flaticon.com/512/5087/5087592.png"
+                  alt="" /></a
+              ><img
+                class=""
+                width="50"
+                height="50"
+                src="https://cdn-icons-png.flaticon.com/512/7131/7131131.png"
+            /></span>
+          </div>
+        </nav>
+      </header>
 
     <main>
         <section>
@@ -456,6 +485,8 @@
         <section class="mt-5 next-prev">
             <div class="container">
                 <div class="row">
+                    <div class="discount d-flex justify-content-center">
+                       <a href="#"> <img class="img-up" src="https://cdn-user-icons.flaticon.com/82002/82002657/1680096638342.svg?token=exp=1680097524~hmac=4779cd758ea74b09ea3623a6ab657a48" alt=""></a>                   </div>
                   <hr>
                     <div class="col-12 d-flex justify-content-center">
                         <button class="btn-prev">Prev</button>
@@ -578,15 +609,25 @@
 
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "50%";
-    document.getElementById("main").style.marginLeft = "50%";
+    document.getElementById("mySidenav").style.width = "20%";
+    document.getElementById("main").style.marginLeft = "20%";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
-
+addbag();
+      function addbag() {
+        console.log("olabula");
+        if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount);
+        } else {
+        localStorage.clickcount = 1;
+        }
+      document.getElementById("adet").innerHTML = localStorage.clickcount;
+  
+}
     </script>
     
 </body>

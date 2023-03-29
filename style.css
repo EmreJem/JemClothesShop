@@ -382,7 +382,13 @@ input {
     width: 450px;
     height: 450px;
 }
-
+#zoomCBag{
+    background-image: url(img/clothes2.webp);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 .inspect-title {
     font-family: 'Montserrat', sans-serif;
 }
@@ -583,7 +589,10 @@ button:focus {
     color: white;
     border: 1px solid black;
 }
-
+.hr-wd{
+    margin: 3rem 17rem;
+opacity: .55;
+}
 .btn-numb {
     width: 40px;
     height: 40px;
@@ -643,6 +652,33 @@ th {
     font-size: 1.5rem;
     padding-bottom: 1rem;
 
+}
+
+.discount{
+    top: 0px;
+    background-color: #111;
+    width: 75px;
+    height: 75px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+.discount:hover{
+    box-shadow:0px 0px 20px 3px #666666;
+
+}
+.img-up:hover{
+    width: 50px;
+
+}
+
+.img-up{
+    transition: all 0.3s ease-in-out 0s;
+    width: 45px;
+    height: 45px;
+    margin-top: 1rem;
 }
 
 td a {
@@ -902,7 +938,13 @@ td a:hover {
         justify-content: center;
         width: 100%;
     }
+    .col-bag-img{
+        width: 100%!important;
+    }
+    .col-info-bag{
+        width: 100%!important;
 
+    }
     .parallax {
         height: 720px;
     }
