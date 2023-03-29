@@ -109,6 +109,21 @@
         });
       }
      }
+
+     buyitem();
+
+
+     buyitem();
+      function addbag() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  document.getElementById("adet").innerHTML = localStorage.clickcount;
+  
+}
+
     </script>
   </body>
 </html>

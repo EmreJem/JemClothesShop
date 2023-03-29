@@ -184,14 +184,15 @@ input {
     height: 93vh;
 }
 .piece{
-    top: 22px;
+    top: 24px;
     position: relative;
     font-family: Montserrat, sans-serif;
     font-size: 0.9rem;
-    left: 29px;
-
+    left: 33px;
 }
 .slide-down {
+    margin-right: 3.50rem;
+
     justify-content: center;
     display: flex;
 }
@@ -682,6 +683,9 @@ td a:hover {
 .border25px {
     border-radius: 25px;
 }
+.border30px {
+    border-radius: 30px!important;
+}
 
 .br-img-l {
     border-top-right-radius: 56px;
@@ -863,7 +867,7 @@ td a:hover {
     }
 
     .parallax {
-        height: 410px;
+        height: 768px;
     }
 
     .main-box {
