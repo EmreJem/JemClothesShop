@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="sass source/stylesheets/index.scss build/stylesheets/style.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Free</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: #f6f6f6">
+    <header class="position-relative">
+      <nav
+        class="navbar sticky-top navbar-expand-lg justify-content-center d-flex bg-white"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">JEM</a>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >×</a
+            >
+            <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+              >T-Shirt</a
+            >
+            <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+              >Pants</a
+            >
+            <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+              >Cargopants</a
+            >
+            <a href="tryit.asp-filename=tryhow_js_sidenav_push_opacity.html#"
+              >Shorts</a
+            >
+          </div>
+
+          <span
+            class="d-flex justify-content-end"
+            style="font-size: 30px; cursor: pointer"
+            onclick="openNav()"
+            ><h2 class="piece" id="adet"></h2>
+            <a style="margin-right: 1rem" href="bag.html"
+              ><img
+                width="50"
+                height="50"
+                src="https://cdn-icons-png.flaticon.com/512/2956/2956820.png"
+                alt="" /></a
+            ><a style="margin-right: 1rem" href="login.html"
+              ><img
+                width="50"
+                height="50"
+                src="https://cdn-icons-png.flaticon.com/512/5087/5087592.png"
+                alt="" /></a
+            ><img
+              class=""
+              width="50"
+              height="50"
+              src="https://cdn-icons-png.flaticon.com/512/7131/7131131.png"
+          /></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="img-promotion">
+          <div id="shoe" class="img-promotion-img"></div>
+          <div class="color-selector d-flex justify-content-center">
+            <a onclick="blueshoe()">
+              <img draggable="false" src="img/mini-img.webp" alt=""
+            /></a>
+            <a onclick="whiteshoe()">
+              <img draggable="false" src="img/mini-img2.webp" alt=""
+            /></a>
+            <a onclick="blackshoe()">
+              <img draggable="false" src="img/mini-img3.webp" alt=""
+            /></a>
+            <a onclick="redshoe()">
+              <img draggable="false" src="img/mini-img4.webp" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <section class="bg-dark">
+        <div class="d-flex justify-content-center">
+          <img src="img/tenis.png" id="text" alt="" />
+          <img src="img/tenis.png" id="text1" alt="" />
+          <img src="img/tenis.png" id="text2" alt="" />
+        </div>
+        
+      </section>
+    </main>
+
+    <script>
+      function blueshoe() {
+        document.getElementById("shoe").style.backgroundImage =
+          "url(img/nike-blue.webp)";
+      }
+
+      function whiteshoe() {
+        document.getElementById("shoe").style.backgroundImage =
+          "url(img/nike-white.webp)";
+      }
+
+      function blackshoe() {
+        document.getElementById("shoe").style.backgroundImage =
+          "url(img/nike-black.jpg)";
+      }
+
+      function redshoe() {
+        document.getElementById("shoe").style.backgroundImage =
+          "url(img/nikeshoes.webp)";
+      }
+    </script>
+
+    <script type="text/javascript">
+      let text = document.getElementById("text");
+      let niketext = document.getElementById("nike-text");
+      let text1 = document.getElementById("text1");
+      let text2 = document.getElementById("text2");
+      let text3 = document.getElementById("text3");
+      let text4 = document.getElementById("text4");
+      let text5= document.getElementById("text5");
+
+      window.addEventListener("scroll", function () {
+        var value = window.scrollY;
+
+        text.style.bottom = value * 1.85 + "px";
+        text1.style.bottom = value * 1.28 + "px";
+        text2.style.bottom = value * 1.65 + "px";
+      
+
+      });
+    </script>
+  </body>
+</html>
