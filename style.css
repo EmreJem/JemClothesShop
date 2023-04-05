@@ -25,7 +25,8 @@
     transition: 0.3s
 }
 
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
 
@@ -43,8 +44,13 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 
@@ -78,7 +84,8 @@ img {
     font-size: 2rem;
     color: rgb(0, 0, 0);
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: grey;
 }
 
@@ -88,7 +95,8 @@ img {
 
     color: white;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: grey;
 }
 
@@ -113,9 +121,11 @@ input {
     height: 40px;
     border-radius: 70px;
 }
-.inspect-area{
+
+.inspect-area {
     height: 750px;
 }
+
 .label-area {
     margin-bottom: 2rem;
 
@@ -183,13 +193,15 @@ input {
     object-fit: cover;
     height: 93vh;
 }
-.piece{
+
+.piece {
     top: 24px;
     position: relative;
     font-family: Montserrat, sans-serif;
     font-size: 0.9rem;
     left: 33px;
 }
+
 .slide-down {
     margin-right: 3.50rem;
 
@@ -367,6 +379,7 @@ input {
     width: 170px;
     height: 170px;
 }
+
 .inspect-clothes-little-img {
     border-top: none;
     object-fit: cover;
@@ -387,14 +400,16 @@ input {
     width: 510px;
     height: 510px;
 }
-.message-box{
+
+.message-box {
     position: relative;
     border-radius: 50px;
     width: 100%;
     height: 180px;
     border: 2px solid black;
 }
-.profile-pic{
+
+.profile-pic {
     background-image: url("img/apoo.jpg");
     background-position: center;
     background-size: cover;
@@ -403,11 +418,12 @@ input {
     border-radius: 100%;
     margin-top: 0.5rem;
     position: absolute;
-    width:90px;
+    width: 90px;
     height: 90px;
     border: 1px solid grey;
 }
-.name{
+
+.name {
     margin-top: 0.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -415,7 +431,8 @@ input {
     margin-left: 6rem;
     width: 150px;
 }
-.text-area{
+
+.text-area {
     font-family: 'Montserrat', sans-serif;
     margin-left: 3rem;
     font-weight: 500;
@@ -424,13 +441,159 @@ input {
     width: 1000px;
 
 }
-#zoomCBag{
+
+.progress-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+
+.star-img {
+    width: 160px;
+    height: 160px;
+    margin: 1rem;
+
+}
+
+.star-text {
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.center-star {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.progress-85 {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.nike1 {
+    width: 100%;
+}
+
+.nike2 {
+    width: 100%;
+}
+body{
+    cursor : url(img/cursor.png),auto!important;
+    
+}
+
+
+.progress-85-bar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 50px;
+    width: 85%;
+    height: 30px;
+    background-color: #FB7561;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    animation: progresss 5s;
+    animation-delay: 5s;
+}
+
+
+
+
+.star-text-alt {
+    margin-bottom: 17rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+@keyframes progresss {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+
+
+.progress-87 {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.progress-87-bar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 50px;
+    width: 85%;
+    height: 30px;
+    background-color: #3BCAE5;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    animation: progressss 5s;
+    animation-delay: 5s;
+}
+
+@keyframes progressss {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 87%;
+    }
+}
+
+
+
+
+
+.progress-95 {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.progress-95-bar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+
+    border-radius: 50px;
+    width: 95%;
+    height: 30px;
+    background-color: grey;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    animation: progress 5s;
+    animation-delay: 5s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 95%;
+    }
+}
+
+#zoomCBag {
     background-image: url(img/clothes2.webp);
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
 }
+
 .inspect-title {
     font-family: 'Montserrat', sans-serif;
 }
@@ -631,10 +794,12 @@ button:focus {
     color: white;
     border: 1px solid black;
 }
-.hr-wd{
+
+.hr-wd {
     margin: 3rem 17rem;
-opacity: .55;
+    opacity: .55;
 }
+
 .btn-numb {
     width: 40px;
     height: 40px;
@@ -696,7 +861,7 @@ th {
 
 }
 
-.discount{
+.discount {
     top: 0px;
     background-color: #111;
     width: 75px;
@@ -707,16 +872,17 @@ th {
 
 }
 
-.discount:hover{
-    box-shadow:0px 0px 20px 3px #666666;
+.discount:hover {
+    box-shadow: 0px 0px 20px 3px #666666;
 
 }
-.img-up:hover{
+
+.img-up:hover {
     width: 50px;
 
 }
 
-.img-up{
+.img-up {
     transition: all 0.3s ease-in-out 0s;
     width: 45px;
     height: 45px;
@@ -741,22 +907,24 @@ td a:hover {
 
 
 
-.promotion-text{
+.promotion-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.58rem;
     font-weight: bolder;
     position: relative;
     text-shadow: 0px 0px 2px white;
-background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
-.promotion-text-alt{
+
+.promotion-text-alt {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
 
     font-weight: 500;
 }
-.img-promotion{
+
+.img-promotion {
     background-color: #F6F6F6;
     position: relative;
     width: 100%;
@@ -765,56 +933,64 @@ background: rgba(0, 0, 0, 0);
     justify-content: center;
 
 }
-.img-promotion-img{
-    background-image: url('img/nikeshoes.webp');
- background-position: center;
+
+.img-promotion-img {
+    background-image: url('img/nike-blue.webp');
+    background-position: center;
     background-size: cover;
     width: 750px;
     height: 890px;
 
     object-fit: cover;
 }
-.color-selector{
+
+.color-selector {
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0px;
 }
 
-#text{
+#text {
     position: relative;
     width: 250px;
     height: 250px;
 }
-#text1{
+
+#text1 {
     position: relative;
     width: 250px;
     height: 250px;
 }
-#text2{
+
+#text2 {
     position: relative;
     width: 250px;
     height: 250px;
 }
-.tenis-ball{
+
+.tenis-ball {
     position: relative;
     width: 250px;
     height: 250px;
 }
-.img-thumb{
+
+.img-thumb {
     position: relative;
 
     width: 350px;
     height: 350px;
     object-fit: cover;
 }
-#img2{
+
+#img2 {
     position: relative;
 
     width: 350px;
     height: 350px;
     object-fit: cover;
 }
+
 .footer-icon {
     margin-right: 3rem;
 }
@@ -837,8 +1013,9 @@ background: rgba(0, 0, 0, 0);
 .border25px {
     border-radius: 25px;
 }
+
 .border30px {
-    border-radius: 30px!important;
+    border-radius: 30px !important;
 }
 
 .br-img-l {
@@ -851,10 +1028,88 @@ background: rgba(0, 0, 0, 0);
     border-bottom-right-radius: 60px;
 }
 
+
+
+.pre-order{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.pre-order-pro{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+
+    font-weight: 300;
+}
+.pre-order-price{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+
+    font-weight: 300;
+}
+.pre-order-button{
+    border: 2.5px solid rgb(92, 163, 235);
+    width: 205px;
+    height:70px;
+    background-color:#F1F1F1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+}
+.pre-order-button:hover{
+    background-color: rgb(92, 163, 235);
+    color: rgb(255, 255, 255);
+    border:2.5px solid white;
+
+}
+#section-bg{
+    background-color: #3b75c5;
+}
+#button-color{
+    border: 2.5px solid rgb(92, 163, 235);
+    background-color:#F1F1F1;
+    color: black;
+
+
+}
 @media (max-width:1024px) {
-    .inspect-area {
-        height: 1500px!important;
+    #tenis-ball{
+        display: none!important;
     }
+    .img-promotion-img {
+        background-image: url(img/nikeshoes.webp);
+        background-position: center;
+        background-size: cover;
+        width: 550px;
+        height: 597px;
+        object-fit: cover;
+    }
+    .color-shoes{
+        width: 150px;
+        height: 150px;
+    }
+    .star-text-alt {
+        margin-bottom: 9rem;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 2rem;
+    }
+    .star-img {
+        margin-top: 8.5rem;
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .inspect-area {
+        height: 1500px !important;
+    }
+
     .footer-col {
         display: flex;
         justify-content: center;
@@ -1051,18 +1306,46 @@ background: rgba(0, 0, 0, 0);
 }
 
 @media (max-width:425px) {
+    .color-shoes {
+        width: 71px;
+        height: 84px;
+    }
+    .img-promotion-img {
+        background-image: url(img/nikeshoes.webp);
+        background-position: center;
+        background-size: cover;
+        width: 522px;
+        height: 447px;
+        object-fit: cover;
+    }
+    .nike1 {
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .nike2 {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .star-img {
+        margin-top: 8.5rem;
+        width: 74px;
+        height: 74px;
+    }
     .footer-col {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .col-bag-img{
-        width: 100%!important;
+
+    .col-bag-img {
+        width: 100% !important;
     }
-    .col-info-bag{
-        width: 100%!important;
+
+    .col-info-bag {
+        width: 100% !important;
 
     }
+
     .parallax {
         height: 720px;
     }

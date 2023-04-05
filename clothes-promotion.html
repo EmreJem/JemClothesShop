@@ -9,11 +9,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="sass source/stylesheets/index.scss build/stylesheets/style.css"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -29,7 +31,12 @@
     <title>Free</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: #f6f6f6">
+  <style>
+   
+  </style>
+  <body  style="background-color: #f6f6f6; ">
+    
+
     <header class="position-relative">
       <nav
         class="navbar sticky-top navbar-expand-lg justify-content-center d-flex bg-white"
@@ -88,16 +95,16 @@
           <div id="shoe" class="img-promotion-img"></div>
           <div class="color-selector d-flex justify-content-center">
             <a onclick="blueshoe()">
-              <img draggable="false" src="img/mini-img.webp" alt=""
+              <img class="color-shoes" draggable="false" src="img/mini-img.webp" alt=""
             /></a>
             <a onclick="whiteshoe()">
-              <img draggable="false" src="img/mini-img2.webp" alt=""
+              <img class="color-shoes" draggable="false" src="img/mini-img2.webp" alt=""
             /></a>
             <a onclick="blackshoe()">
-              <img draggable="false" src="img/mini-img3.webp" alt=""
+              <img class="color-shoes" draggable="false" src="img/mini-img3.webp" alt=""
             /></a>
             <a onclick="redshoe()">
-              <img draggable="false" src="img/mini-img4.webp" alt=""
+              <img class="color-shoes" draggable="false" src="img/mini-img4.webp" alt=""
             /></a>
           </div>
         </div>
@@ -105,38 +112,141 @@
       <!--  -->
 
       <section class="bg-dark">
-        <div class="d-flex justify-content-center">
+        <div id="tenis-ball" class="d-flex justify-content-center">
           <img src="img/tenis.png" id="text" alt="" />
           <img src="img/tenis.png" id="text1" alt="" />
           <img src="img/tenis.png" id="text2" alt="" />
+          
         </div>
         
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="star-text"> <img class="star-img" src="img/star.svg" alt=""></div>
+              <div class="center-star star-text"> <img class="star-img center-star"src="img/star.svg" alt=""></div>
+              <div class="star-text"></div> <img class="star-img"src="img/star.svg" alt=""></div>
+
+
+              <h2 class="text-center star-text-alt">Eleştirmenlerden Tam Not Aldı</h2>
+          </div>
+        </div>
+      </div>
       </section>
+      <!--  -->
+        <section>
+  <div class="container">
+    <img  src="img/nikeee.png"  class="nike1" alt="">
+    <img  src="img/nikee.png"  class="nike2"  alt="">
+  </div>
+       </section>
+     <!--  -->
+     <section>
+      <div id="section-bg" class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h3 id="pre-text" class="pre-order text-center mt-5">PRE ORDER</h3>
+            <hr  class="hr-wd text-white">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h2 id="pre-pro" class="pre-order-pro text-center">Nike Court Air Zoom Vapor Pro 2</h2>
+            <h3 id="pre-price" class="pre-order-price text-center mt-5">175.00$</h3>
+            <a class="d-flex justify-content-center text-decoration-none mb-5 mt-5"><button id="button-color" class="pre-order-button">PRE ORDER</button></a>
+            <hr class="hr-wd text-white">
+          </div>
+        </div>
+      </div>
+     </section>
     </main>
+
+    <script>
+      window.sr=ScrollReveal();
+      sr.reveal('.star-img',{
+        origin:'left',
+        duration:1000,
+        distance:'25rem',
+        delay:300
+
+      });
+      sr.reveal('.star-text-alt',{
+        origin:'right',
+        duration:1000,
+        distance:'6rem',
+        delay:300
+
+      });
+
+      sr.reveal('.nike2',{
+        origin:'right',
+        duration:1000,
+        distance:'4em',
+        delay:300
+
+      });
+
+
+      sr.reveal('.nike1',{
+        origin:'left',
+        duration:1000,
+        distance:'4rem',
+        delay:300
+
+      });
+    </script>
+
+
 
     <script>
       function blueshoe() {
         document.getElementById("shoe").style.backgroundImage =
           "url(img/nike-blue.webp)";
+          document.getElementById("pre-pro").style.color="white";
+          document.getElementById("pre-text").style.color="white";
+          document.getElementById("pre-price").style.color="white";
+          document.getElementById("section-bg").style.backgroundColor="#3b75c5";
       }
 
       function whiteshoe() {
         document.getElementById("shoe").style.backgroundImage =
           "url(img/nike-white.webp)";
+          document.getElementById("pre-pro").style.color="black";
+          document.getElementById("pre-text").style.color="black";
+          document.getElementById("pre-price").style.color="black";
+          document.getElementById("section-bg").style.backgroundColor="#969696";
       }
 
       function blackshoe() {
         document.getElementById("shoe").style.backgroundImage =
           "url(img/nike-black.jpg)";
+
+          document.getElementById("pre-pro").style.color="white";
+          document.getElementById("pre-text").style.color="white";
+          document.getElementById("pre-price").style.color="white";
+          document.getElementById("section-bg").style.backgroundColor="#252525";
       }
 
       function redshoe() {
         document.getElementById("shoe").style.backgroundImage =
           "url(img/nikeshoes.webp)";
+          document.getElementById("pre-pro").style.color="white";
+          document.getElementById("pre-text").style.color="white";
+          document.getElementById("pre-price").style.color="white";
+          document.getElementById("section-bg").style.backgroundColor="#ed455a";
       }
     </script>
 
+
+
     <script type="text/javascript">
+
+ScrollReveal().reveal('.progress-text',{delay:450});
+ScrollReveal().reveal('.progress-85-bar',{delay:450});
+ScrollReveal().reveal('.progress-95-bar',{delay:450});
+ScrollReveal().reveal('.progress-87-bar',{delay:450});
+
+
+
       let text = document.getElementById("text");
       let niketext = document.getElementById("nike-text");
       let text1 = document.getElementById("text1");
@@ -148,12 +258,14 @@
       window.addEventListener("scroll", function () {
         var value = window.scrollY;
 
-        text.style.bottom = value * 1.85 + "px";
-        text1.style.bottom = value * 1.28 + "px";
-        text2.style.bottom = value * 1.65 + "px";
+        text.style.bottom = value * 2.85 + "px";
+        text1.style.bottom = value * 2.18 + "px";
+        text2.style.bottom = value * 2.45 + "px";
       
 
       });
+
+
     </script>
   </body>
 </html>
